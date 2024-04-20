@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  #notes {
+    width: 90%;
+    /* margin: 2rem auto; */
+    display: flex;
+    justify-content: space-between;
+    
+   
+  }
+  .left, .right{
+      width: 50%;
+      
+  }
+  .left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+      height: 400px;
+      background-color: #D1DCE7;
+      padding: 30px 10px;
+      
+     
+     
+  }
+  
+  label{
+      display: none;
+  }
+  .left textarea, .left button{
+      max-width: 300px;
+  }
+  .left textarea, .left .styling{
+      margin-bottom: 1rem;
+  }
+  .left textarea{
+      box-shadow: 1px 3px 8px 1px #976568;
+      padding: 10px;
+      border: none;
+  }
+  
+  button{
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      border: none;
+      padding: 7px 10px;
+      box-shadow: 1px 1px 19px  #EC719A ;
+      background-color: #F83B60;
+      color: white;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+      cursor: pointer;
+      background: linear-gradient(to right, #F72964, #FA9444 50%, 50%);
+  
+     
+  }
+  
+  .right{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+   
+  }
+  .right .note{
+      border-radius: 5px;
+      position: relative;
+      padding: 5px;
+      box-shadow: 2px 2px 3px 4px rgba(0,0,0,0.3);
+      min-width: 100px;
+      max-width: 150px;
+      margin: 10px;
+  }
+  .right .note .close{
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
